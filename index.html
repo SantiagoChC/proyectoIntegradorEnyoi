@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/ico.png" type="image/gif" sizes="16x16">
+    <title>Mi portafolio</title>
+    <meta name="keywords" content="miportafolio" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const btnContact = document.getElementById('btn-contact');
+
+        // Función que aplica la animación al botón
+        function aplicarAnimacion() {
+            // Agrega una clase al botón para aplicar la animación CSS
+            btnContact.classList.add('animacion-botones');
+
+            // Deshabilita el botón temporalmente para evitar que el usuario haga clic repetidamente durante la animación
+            btnContact.disabled = true;
+
+            // Después de un tiempo determinado (por ejemplo, 1 segundo), elimina la clase de animación y habilita el botón nuevamente
+            setTimeout(() => {
+                btnContact.classList.remove('animacion-botones');
+                btnContact.disabled = false;
+            }, 1000); // 1000 milisegundos (1 segundo)
+        }
+
+        // Agrega un evento de clic al botón para activar la animación
+        btnContact.addEventListener('click', aplicarAnimacion);
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary vertical-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="imghead" src="ico.png" alt="logo-portafolio"
+                        title="portafolio" width="60px" height="60px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi bi-arrows-expand"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="navbar">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="miBoton" class="botonAnimado">Haz clic en mí</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <section class="bg-dark text-black">
+
+            <img class="imgbody" src="BG.png" width="100%" height="532px">
+            <div class="textcenter">
+                <h1 class="typing-text">Santiago Chía</h1>
+                <h2 class="typing-text">Web Development </h2>
+                <a href="periodismoenaccion.net" target="_blank" rel="nofollow" class="btn btn-secondary mt-5"
+                    id="btn-contact">Contacto</a>
+
+            </div>
+
+    </div>
+    <div class="logo"><img src="_14bbbeef-2a17-4b66-aa96-d0fe647d56d3-removebg-preview-removebg-preview (1).png" alt="">
+    </div>
+    </div>
+    </section>
+
+    <section class="bg-dark text-white">
+
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col mt-2">
+                    <h4>Mis logros académicos</h4>
+                    <p>En el año 2021 hice un diplomado de Python en el programa del MinTic y la Universidad Sergio
+                        Arboleda</p>
+                    <img src="python.PNG" width="80%"></p>
+
+                </div>
+                <div class="col mt-2">
+                    <h4>Sobre mi</h4>
+                    <p>Me apasiona profundamente el emocionante y en constante evolución mundo de la programación y el
+                        diseño web. Mi curiosidad y deseo de aprender me han llevado a embarcarme en un viaje fascinante
+                        hacia la creación y la innovación digital.
+
+                        Siento un sincero entusiasmo por desentrañar los secretos del código, explorar nuevos lenguajes
+                        de programación y descubrir cómo dar vida a mis ideas a través del desarrollo web. Cada línea de
+                        código que escribo es un paso más hacia la creación de experiencias en línea excepcionales y
+                        funcionales.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="acerca">
+        <div class="text-black p-5 mt-0 text-center ">
+            <button class="btn btn-secondary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-backdrop="static"
+                data-bs-target="#OffcanvasInfo" aria-controls="OffcanvasInfo">Acerca de mí</button>
+        </div>
+    </div>
+
+
+    <div class="offcanvas bg-dark text-white offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="OffcanvasInfo" aria-labelledby="OffcanvasInfo">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="OffcanvasInfo2">Mi información</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+            <aside>
+                <img src="profile.png" width=" 50%">
+                <h2><b>Santiago Chía.</b></h2>
+                <p>Hola, acá podrás conocer más acerca de mi trayectoria profesional</p>
+                <div class="star">
+                    <button class="bg-dark"><img src="star.png" alt=""></button>
+                    <button class="bg-dark"><img src="star.png" alt=""></button>
+                    <button class="bg-dark"><img src="star.png" alt=""></button>
+                    <button class="bg-dark"><img src="star.png" alt=""></button>
+                    <button class="bg-dark"><img src="star.png" alt=""></button>
+                </div>
+            </aside>
+            <section>
+                <article>
+                    <a href="https://github.com/SantiagoChC">
+                        <button class="github" type="button" btn btn-info mb-5>Conoce mi perfil GitHub</button>
+                    </a>
+                </article>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- <div class="contac">
+        <h1>Contacto</h1>
+    </div> -->
+
+    <footer class="bg-dark text-white pt-5 pl-5 pr-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Social Networks</h6>
+                    <p class="ptext">¡Gracias por visitar mi portafolio!, a continuación encontrarás accesos directos a
+                        mis redes
+                        sociales.</p>
+                    <div class="social">
+                        <i class="bi bi-facebook" width="16" height="16"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-right">
+                        <h6>Contacto</h6>
+                        <p>Correo electrónico: <b>santidfs@gmail.com</b></p>
+                        <p>Celular: <b>315-861-48-79</b></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="bloque3">
+                        <div class="text-right mt-0">
+                            <h6>Ubicación</h6>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15904.041596864674!2d-74.03960699413894!3d4.768157019435694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85f3528ea58d%3A0x720e62d3795f4d9c!2sCra.%2015b%20%23188-2%20a%20188-98%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1693365376680!5m2!1ses!2sco"
+                                width="300" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <p><span style="margin-right: 250px;"></span>2023®</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

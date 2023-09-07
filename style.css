@@ -1,0 +1,168 @@
+* {
+    max-width: 100%;
+}
+
+footer {
+    max-width: 100%;
+}
+
+.nav-item {
+    filter: invert(100%);
+}
+
+footer h6 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
+
+.contac h1 {
+    text-align: center;
+}
+
+.bloque3 {
+    max-width: 200%;
+    margin-right: -230%;
+}
+
+.ptext {
+    max-width: 79%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    border-bottom: 2px solid #333; /* Color y grosor del borde */
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    border-bottom: 2px solid #333; /* Color y grosor del borde */
+
+}
+
+.logo {
+    position: absolute;
+    margin: -17%;
+    top: 590px;
+    right: 85%;
+
+}
+
+
+.imgbody {
+    border-bottom: 2px solid #333; /* Color y grosor del borde */
+}
+.acerca {
+    background-color: #0e6dacee;
+}
+
+.social i.bi {
+    margin-right: 145px;
+    font-size: 30px;
+}
+
+.textcenter {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    bottom: 25%;
+
+}
+
+#btn-contact {
+    position: absolute;
+    top: 30%;
+    padding: 10px 50px 10px 50px;
+    border-radius: 15px;
+    background-color: rgb(33, 45, 46);
+}
+
+.star {
+    color: goldenrod;
+}
+
+.star img {
+    background-color: gold;
+}
+
+.github {
+    font-size: 150%;
+    margin-top: 10%;
+}
+
+.btn-close {
+    background-color: whitesmoke;
+}
+
+.container-fluid {
+    background-color: black;
+
+}
+
+#OffcanvasInfo {
+    border: double;
+}
+
+#OffcanvasInfo2 {
+    font-size: 160%;
+    right: 100%;
+
+}
+
+.imghead {
+    filter: invert(100%);
+}
+
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0px solid #000;
+    width: 15em;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #000;
+    }
+}
+
+/* Define la animación */
+@keyframes crecer {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplica la animación al botón cuando se le pasa el cursor */
+.animacion-boton:hover {
+    animation: crecer 0.3s ease;
+}
+
+
+
+
+
